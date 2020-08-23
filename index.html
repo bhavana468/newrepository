@@ -1,0 +1,165 @@
+<?php 
+  session_start(); 
+
+  if (!isset($_SESSION['username'])) {
+  	$_SESSION['msg'] = "You must log in first";
+  	header('location: login.php');
+  }?>
+<!DOCTYPE html>
+
+
+<html>
+<head>
+	<meta charset="UTF-8" />
+	<title>Gardening Website Template</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<!--[if IE 7]>
+		<link rel="stylesheet" type="text/css" href="css/ie7.css" />
+	<![endif]-->
+	
+</head>
+<style>
+
+
+.topnav {
+  overflow: hidden;
+  background-color: #FF1493;
+  
+}
+
+
+
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 17px 10px;
+  text-decoration: none;
+  font-size: 17px;
+  
+}
+
+.topnav a:hover {
+  background-color: #E0FFFF;
+  color: black;
+  visibility:visible;
+    opacity:1;
+
+}
+
+.topnav a.active {
+  background-color: #4CAF50;
+  color: white;
+}
+
+ 
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  
+}
+.box{
+background:url(../images/b7.jpg);
+}
+.box a:hover{
+ background-color:aqua;
+
+ border-radius:5px;
+ box-shadow:5px 5px 5px 5px gray;
+ transition:0.8s;
+
+}
+.foot p{
+margin-top:20px;
+}
+body{
+margin:unset;
+}
+
+</style>
+
+
+<body>
+	<div id="page">
+		
+			<div>
+				<a href="index.html"><img src="images/g3.png" alt="Logo" height="250" width="500"/></a>
+				
+			</div></div>
+			
+			<div class="box" style="background-image:url('images/b13.jpg')">
+			 <div class="topnav">
+			 <ul>
+
+				<a href="index.html"><span style="font-size:1vw"><strong>Home &#127968 </strong>	</span></a>
+				<a href="organic.html"><span style="font-size:1vw"><strong>Types of crops &#127806	</strong></span></a>
+				<a href="seasons.html"><span style="font-size:1vw"><strong>Crop seasons &#127748 </strong></span></a>
+				<a href="regions.html"><span style="font-size:1vw"><strong>Regions &#127757 </strong>	</span></a>
+				
+        
+				<a href="http://127.0.0.1:5000/"><span style="font-size:1vw"><strong>Crop prediction &#127805 </strong></span></a>
+				
+				<a href="state.html"><span style="font-size:1vw"><strong>State agriculture departments &#127889 </strong></span></a>
+				<a href="doc.html"><span style="font-size:1vw"><strong>Farmer's handbook &#128218 </strong></span></a>
+				<a href="mycrops.html"><span style="font-size:1vw"><strong>MyCrops &#128221 </strong></span></a>
+				<a href="count.php"><span style="font-size:1vw"><strong>Account &#128102 </strong></span></a>
+				<a href="shop.html"><span style="font-size:1vw"><strong>shop here &#128092	 </strong></span></a>
+				<a href="logt.php"><span style="font-size:1vw"><strong>Logout&#10150	</strong></span></a>
+				
+			
+			 </ul></div>
+		
+		
+		<div id="body">
+			<ul>
+				<li>
+					<h1>Crop Prediction</h1>
+<p style="color:maroon;font-size:20px;font-weight:bold;">Crop Prediction involves predicting the best  crop for cultivating from available historical data like weather parameter, soil parameter and historic crop yield. 
+The prediction will help farmer to predict  the crop before cultivating onto the agriculture field. The proposed project provides solution to predict crop field from previous data.
+ This research focuses on creation of a prediction model which may be used to future prediction of crop and crop yield. 
+The main objective of crop prediction is to give pace to the growth rate of agriculture development and crop production and productivity which will strengthen the economic status of the farmers and uplift their life-style. 
+To maintain a sustainable growth rate in agriculture production and food safety, extension of new techniques of agriculture and settlement of agriculture related problems of the farmer.
+
+</p>
+					</li>
+				<li>
+					<h1>Soils</h1>
+					<div>
+						<img src="images/lettuce.jpg" alt="Image" />
+						<p style="color:maroon;font-size:0.9vw;font-weight:bold;">1.Alluvial Soils</br>
+2.	Black Soils</br>
+3.	Red Soils</br>
+4.	Desert Soils</br>
+5.	Laterite Soils</br>
+6.	Mountain Soils</p>
+
+					
+				</li>
+				<li>
+					<h1>Crops Gallery</h1>
+					<div>
+						<img src="images/harvesting.jpg" alt="Image" />
+					</div>
+					<div>
+						<img src="images/girl-harvesting.jpg" alt="Image" />
+					
+				</li>
+				
+			</ul>
+		</div>
+		
+	</div></div>
+	<footer style="background-image:url('images/bg-footer.jpg')">
+	<ul><li>adfa</li></ul>
+	<div class="foot">
+  
+  <p>Contact information: <a href="mailto:someone@example.com">
+  someone@example.com</a>.</p></div>
+  dasf
+  asdf
+  asdf
+</footer></div>
+
+</body>
+</html>
